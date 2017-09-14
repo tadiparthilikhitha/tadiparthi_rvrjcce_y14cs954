@@ -136,10 +136,10 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void removeToIndex(int index) {
 		// Add your implementation here
-		int len=this.students.length;
+	/*	int len=this.students.length;
 		for(int i=0; i<= len-index;i++)
 		this.students[i]=this.students[i+index+1];
-		this.students[len+1]=null;
+		this.students[len+1]=null;*/
 	}
 
 	@Override
