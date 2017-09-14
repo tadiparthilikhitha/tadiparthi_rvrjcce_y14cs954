@@ -84,18 +84,18 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void remove(int index) {
 		// Add your implementation here
-		int len=this.students.length;
+	/*	int len=this.students.length;
 		for(int j=index;j<len;j++)
 		{
 		this.students[j]=this.students[j+1];}
 
-			this.students[len]=null;
+			this.students[len]=null;*/
 	}
 
 	@Override
 	public void remove(Student student) {
 		// Add your implementation here
-		int len=this.students.length;
+	/*	int len=this.students.length;
 		int t=0;
 		for(int j=0;j<len;j++)
 		{
@@ -108,7 +108,7 @@ public class StudentGroup implements StudentArrayOperation {
 		for(int j=t;j<len;j++)
 		this.students[j]=this.students[j+1];
 
-			this.students[len]=null;
+			this.students[len]=null;*/
 	}
 
 	@Override
