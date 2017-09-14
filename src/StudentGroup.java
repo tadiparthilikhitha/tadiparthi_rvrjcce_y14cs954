@@ -26,8 +26,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getStudents() {
 		// Add your implementation here
-		if(students==null)
-			throw IllegalArgumentException;
+		
 		
 		return this.students;
 	}
@@ -42,8 +41,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		if(index<0 || index > this.students.length)
-			throw IllegalArgumentException;
+		
 		return this.students[index];
 	}
 
@@ -61,7 +59,7 @@ public class StudentGroup implements StudentArrayOperation {
 		{
 		this.students[j]=this.students[j-1];}
 			this.students[0]=student;
-			//this.students[l+1]=null;
+			this.students[l+1]=null;
 			
 		
 	}
@@ -71,7 +69,7 @@ public class StudentGroup implements StudentArrayOperation {
 		// Add your implementation here
 		int len=this.students.length;
 		this.students[len]=student;
-		//this.students[len+1]=null;
+		this.students[len+1]=null;
 	
 	}
 
