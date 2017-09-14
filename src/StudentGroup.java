@@ -166,7 +166,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getByBirthDate(Date date) {
 		// Add your implementation here
-		return null;
+		return this.students.getBirthDate();
 	}
 
 	@Override
