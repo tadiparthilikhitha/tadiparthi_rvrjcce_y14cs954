@@ -166,7 +166,12 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getByBirthDate(Date date) {
 		// Add your implementation here
-		return this.students.birthDate;
+		int len=this.students.length;
+		for(int i=0;i<len;i++)
+		{
+			if((this.students[i].getBirthDate()).equals(date))
+
+		return this.students[i];}
 	}
 
 	@Override
