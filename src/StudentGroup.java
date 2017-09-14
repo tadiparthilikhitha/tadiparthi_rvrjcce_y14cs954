@@ -26,8 +26,8 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getStudents() {
 		// Add your implementation here
-		if(students==null)
-			throw IllegalArgumentException;
+		//if(students==null)
+			//throw IllegalArgumentException;
 		
 		return this.students;
 	}
