@@ -53,12 +53,12 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addFirst(Student student) {
 		// Add your implementation here
-	/*	int l=this.students.length;
+		int l=this.students.length;
 		for(int j=l+1;j>0;j--)
 		{
 		this.students[j]=this.students[j-1];}
 			this.students[0]=student;
-			//this.students[l+2]=null;*/
+			this.students[l+2]=null;
 			
 		
 	}
