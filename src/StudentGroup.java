@@ -66,50 +66,25 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addLast(Student student) {
 		// Add your implementation here
-	/*	int len=this.students.length;
-		this.students[len]=student;
-			this.students[len+1]=null;*/
+	
 	}
 
 	@Override
 	public void add(Student student, int index) {
 		// Add your implementation here
-	/*	int len=this.students.length;
-		for(int j=len;j>index;j--)
-		{
-		this.students[j]=this.students[j-1];}
-			this.students[index]=student;
-			this.students[len+1]=null;*/
+	
 	}
 
 	@Override
 	public void remove(int index) {
 		// Add your implementation here
-	/*	int len=this.students.length;
-		for(int j=index;j<len;j++)
-		{
-		this.students[j]=this.students[j+1];}
-
-			this.students[len]=null;*/
+	
 	}
 
 	@Override
 	public void remove(Student student) {
 		// Add your implementation here
-	/*	int len=this.students.length;
-		int t=0;
-		for(int j=0;j<len;j++)
-		{
-			if(this.students[j].equals(student))
-			{
-				t=j;
-				break;
-			}
-		}
-		for(int j=t;j<len;j++)
-		this.students[j]=this.students[j+1];
 
-			this.students[len]=null;*/
 	}
 
 	@Override
@@ -123,40 +98,19 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void removeFromElement(Student student) {
 		// Add your implementation here
-	/*	int len=this.students.length;
-		int t=0;
-             for(int j=0;j<len;j++)
-		if((this.students[j]).equals(student))
-		{t=j;
-		break;
-                }
-		//this.students[index]=this.students[i];
-		this.students[t]=null;*/
+	
 	}
 
 	@Override
 	public void removeToIndex(int index) {
 		// Add your implementation here
-	/*	int len=this.students.length;
-		for(int i=0; i<= len-index;i++)
-		this.students[i]=this.students[i+index+1];
-		this.students[len+1]=null;*/
+
 	}
 
 	@Override
 	public void removeToElement(Student student) {
 		// Add your implementation here
-	/*	int len=this.students.length;
-		int t=0;
-             for(int j=0;j<len;j++)
-		if((this.students[j]).equals(student))
-		{t=j;
-		break;
-                }
-		int j=this.students.length;
-		for(i=0;i<=j-t;i++)
-		this.students[i]=this.students[i+t+1];
-		this.students[i+1]=null;*/
+	
 	}
 
 	@Override
@@ -167,12 +121,9 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getByBirthDate(Date date) {
 		// Add your implementation here
-		/*int len=this.students.length;
-		for(int i=0;i<len;i++)
-		{
-			if((this.students[i].getBirthDate()).equals(date))
+		
 
-		return this.students[i];}*/
+		return null;
 	}
 
 	@Override
