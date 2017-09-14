@@ -122,7 +122,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void removeFromElement(Student student) {
 		// Add your implementation here
-		int len=this.students.length;
+	/*	int len=this.students.length;
 		int t=0;
              for(int j=0;j<len;j++)
 		if((this.students[j]).equals(student))
@@ -130,7 +130,7 @@ public class StudentGroup implements StudentArrayOperation {
 		break;
                 }
 		//this.students[index]=this.students[i];
-		this.students[t]=null;
+		this.students[t]=null;*/
 	}
 
 	@Override
