@@ -54,11 +54,11 @@ public class StudentGroup implements StudentArrayOperation {
 	public void addFirst(Student student) {
 		// Add your implementation here
 		int len=this.students.length;
-		for(int j=len;j>0;j--)
+		for(int j=len+1;j>0;j--)
 		{
 		this.students[j]=this.students[j-1];}
 			this.students[0]=student;
-			this.students[len+1]=null;
+			this.students[len+2]=null;
 		
 	}
 
