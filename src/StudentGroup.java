@@ -74,7 +74,7 @@ public class StudentGroup implements StudentArrayOperation {
 	public void add(Student student, int index) {
 		// Add your implementation here
 		int len=this.students.length;
-		for(int j=len;j>index;j++)
+		for(int j=len;j>index;j--)
 		{
 		this.students[j]=this.students[j-1];}
 			this.students[index]=student;
@@ -89,7 +89,7 @@ public class StudentGroup implements StudentArrayOperation {
 		{
 		this.students[j]=this.students[j+1];}
 
-			this.students[len+1]=null;
+			this.students[len]=null;
 	}
 
 	@Override
@@ -108,7 +108,7 @@ public class StudentGroup implements StudentArrayOperation {
 		for(int j=t;j<len;j++)
 		this.students[j]=this.students[j+1];
 
-			this.students[len+1]=null;
+			this.students[len]=null;
 	}
 
 	@Override
@@ -166,12 +166,12 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getByBirthDate(Date date) {
 		// Add your implementation here
-		int len=this.students.length;
+		/*int len=this.students.length;
 		for(int i=0;i<len;i++)
 		{
 			if((this.students[i].getBirthDate()).equals(date))
 
-		return this.students[i];}
+		return this.students[i];}*/
 	}
 
 	@Override
