@@ -26,8 +26,8 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getStudents() {
 		// Add your implementation here
-		if(students==null)
-			throw IllegalArgumentException;
+		//if(students==null)
+			//throw IllegalArgumentException;
 		
 		return this.students;
 	}
@@ -53,26 +53,62 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addFirst(Student student) {
 		// Add your implementation here
+		int len=this.students.length;
+		for(int j=len;j>0;j--)
+		{
+		this.students[j]=this.students[j-1];}
+			this.students[0]=student;
+			this.students[i+1]=null;
+		
 	}
 
 	@Override
 	public void addLast(Student student) {
 		// Add your implementation here
+		int len=this.students.length;
+		this.students[len]=student;
+			this.students[len+1]=null;
 	}
 
 	@Override
 	public void add(Student student, int index) {
 		// Add your implementation here
+		int len=this.students.length;
+		for(int j=len;j>index;j++)
+		{
+		this.students[j]=this.students[j-1];}
+			this.students[index]=student;
+			this.students[len+1]=null;
 	}
 
 	@Override
 	public void remove(int index) {
 		// Add your implementation here
+		int len=this.students.length;
+		for(int j=index;j<len;j++)
+		{
+		this.students[j]=this.students[j+1];}
+
+			this.students[len+1]=null;
 	}
 
 	@Override
 	public void remove(Student student) {
 		// Add your implementation here
+		int len=this.students.length;
+		int t=0;
+		for(int j=0;j<len;j++)
+		{
+			if(this.students[j].equals(student))
+			{
+				t=j;
+				break;
+			}
+		}
+		for(int j=t;j<len;j++)
+		this.students[j]=this.students[j+1];
+
+			this.students[len+1]=null;
 	}
 
 	@Override
