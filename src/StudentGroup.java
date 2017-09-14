@@ -114,9 +114,9 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void removeFromIndex(int index) {
 		// Add your implementation here
-		int len=this.students.length;
+		/*int len=this.students.length;
 		
-		this.students[index]=null;
+		this.students[index]=null;*/
 	}
 
 	@Override
